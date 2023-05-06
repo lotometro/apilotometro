@@ -1,0 +1,9 @@
+{
+    "connectionString": "mongodb+srv://lotometroec08:lotometroec08@cluster0.ozbiz7i.mongodb.net/test?authSource=admin&replicaSet=atlas-4nfs83-shard-0&readPreference=primary&ssl=true",
+    "database":"lotometrodtb",
+    "version": "1.0.5",
+    "date" :  "30/01/2023",
+    "port": 9090,
+    "secret": "potato",
+    "algorithms": "HS256"
+}
