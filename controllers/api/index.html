@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Exemplo de recebimento de dados da API em JSON</title>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+	<div id="dados-api"></div>
+</body>
+</html>
+
+<script>
+	$(document).ready(function() {
+		$.getJSON("https://apilotometro.github.io:9090/api/", function(data) {
+			var html = "<ul>";
+			html += "<li>Nome do Repositório: " + data.name + "</li>";
+			html += "<li>Descrição: " + data.description + "</li>";
+			html += "<li>Número de Estrelas: " + data.stargazers_count + "</li>";
+			html += "<li>Data de Criação: " + data.created_at + "</li>";
+			html += "</ul>";
+			$("#dados-api").html(html);
+		});
+	});
+</script>
